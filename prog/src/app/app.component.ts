@@ -1,12 +1,16 @@
 
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http'; //HTTP CLIENT
+import { Observable } from 'rxjs';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
+  title(title: any) {
+    throw new Error("Method not implemented.");
+  }
   results: string[];
   private BASE_URL:string = '/api';
     // Inject HttpClient into your component or service.
